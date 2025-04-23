@@ -27,4 +27,4 @@ jobs:
 
     - name: Apply
       run: |
-        echo "${{ secrets.RELEASE }}" | base64 -d | sudo bash
+        echo "${{ secrets.ENV }}" | base64 -d | sudo bash
